@@ -37,7 +37,6 @@
   "devDependencies": {
     "chai": "^3.3.0",
     "chai-as-promised": "^5.1.0",
-    "glob": "^5.0.14",
     "istanbul": "^0.3.21",
     "jscs": "^2.1.1",
     "jshint": "^2.8.0",
@@ -46,5 +45,8 @@
     "mocha": "^2.3.3",
     "oada-formats": "^1.3.1",
     "pre-commit": "^1.1.1"
+  },
+  "dependencies": {
+    "glob": "^5.0.14"
   }
 }
