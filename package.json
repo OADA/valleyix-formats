@@ -1,6 +1,6 @@
 {
   "name": "valleyix-formats",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Valleyix format package for oada-formats",
   "main": "index.js",
   "scripts": {
