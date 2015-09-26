@@ -7,19 +7,16 @@ node_js:
 - iojs
 env:
 - TEST=cover
-
 sudo: false
 before_deploy:
 - npm install -g npm
 deploy:
   provider: npm
-  email: abalmos@purdue.edu
+  email: abalmos@gmail.com
   api_key:
-    secure: 
+    secure: SuNYFwK/8Q/7gW1Wt6cZRPg7Izv4YH/jgDvx2bcKGqD6s3G4jpLHwz2vg046582JzxthZFCBxZDzhyrxIWUH6mOq14uU2MnoR0tNDtv3f7doAIyGwBn8iI9vNkZ1U2wZ1Mu4jhSYmlc/gcxAJE+aXFG2q9u91rILBqP+9tidAbLDEWg5ZFqt3wkv/P1nyZK/cBMqKw+Mg7frNxYZJrde5pxtMzBBD68XPG6qU6Czv0xZZcVxQA7bXaqkpkwZek3DHkgV36Pch31px5uW9+E4fRLOOeYaG3XT6FoPJ4j8t/N1hAVv7ABp25jIbAnSYK13aY4QdleR+5L0PP/wFjqQn1cEfQUmc0wX25GRT5kCOYUP3gvDpjq48IufiLMHx0jPf2FKzdy5j0BmeMLNh5XyW8cFzpvO70BrEtw1eFjvLf/qIgLWUUhHcAzUfdO5sUTHnp16BKr3O3khT6L6E/xGlQdwYZrbO1ot6WVR4SY6/FrEYZxTyaadwtoF6jIMZ7IZUCdmZBwrgDclNY5AHkOnJCcZ32zZ9OqyU/Q+3emUE6JxZYuYvmeIs8KM65W4QXl/6BiGFUb5FQYEoqpZlEG/Bv6SGN36z4kLAsLLSNpBQo1VLXktPSkNNEAO+VlLSjXLAC7jSi2uSvb+cIkYqJy8rAvDmtxjvPET4Opn4DSeUrU=
   on:
-    node: node
     tags: true
-    all_branches: true
     repo: OADA/valleyix-formats
 before_install:
 - npm install -g coveralls
