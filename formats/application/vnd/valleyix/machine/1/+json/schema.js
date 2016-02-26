@@ -12,23 +12,51 @@ module.exports = {
         status: {
             $ref: refs.OADA_LINK_VERSIONED
         },
-        applied: {
+        asApplied: {
             $ref: refs.OADA_LINK_VERSIONED
         },
         vriZones: {
             $ref: refs.OADA_LINK_VERSIONED
         },
         vriPrescriptions: {
-            $ref: refs.OADA_LINK_VERSIONED
+            type: 'object',
+            properties: {
+                vriAsFile: {
+                    $ref: refs.OADA_LINK_VERSIONED
+                },
+                vriAsModel: {
+                    $ref: refs.OADA_LINK_VERSIONED
+                }
+            },
+            required: [
+                'vriAsFile',
+                'vriAsModel'
+            ]
         },
         workOrders: {
-            $ref: refs.OADA_LINK_VERSIONED
+            stepProgram: {
+                $ref: refs.OADA_LINK_VERSIONED
+            },
+            quickCommands: {
+                select2Start: {
+                    $ref: refs.OADA_LINK_VERSIONED
+                },
+                select2Stop: {
+                    $ref: refs.OADA_LINK_VERSIONED
+                },
+                pro2Start: {
+                    $ref: refs.OADA_LINK_VERSIONED
+                },
+                pro2Stop: {
+                    $ref: refs.OADA_LINK_VERSIONED
+                }
+            },
         }
     },
     required: [
         'configuration',
         'status',
-        'applied',
+        'asApplied',
         'vriZones',
         'vriPrescriptions',
         'workOrders'

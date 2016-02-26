@@ -98,6 +98,10 @@ module.exports = {
         },
         RemoteTerminalUnitId: {
             anyOf: [{
+                type: 'string',
+                pattern: '[0-9]+'
+            },
+            {
                 type: 'number'
             },
             {
