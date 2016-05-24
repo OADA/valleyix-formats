@@ -48,7 +48,12 @@ module.exports = {
             minLength: 1
         },
         FirmwareVersion: {
-            type: 'string'
+            anyOf: [{
+                type: 'string'
+            },
+            {
+                type: 'null'
+            }]
         },
         ForwardAngle: {
             anyOf: [{
